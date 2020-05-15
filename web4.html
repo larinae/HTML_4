@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <title>Задание 4</title>
+   </head>
+   <body>
+      <!--ПЛОЩАДЬ(4.1)-->
+      <form name="form1">
+         <img src="трапеция.png"><br><br>
+         <h4> Площадь трапеции S = ((a+b)/2)*h </h4>
+         Введите значение верхнего основания : <input type="number" name="a"><br><br>
+         Введите значение нижнего основания : <input type="number" name="b" ><br><br>
+         Введите значение высоты: <input type="number" name="h" ><br><br>
+         <input type="button" value="Вычислить" onClick="area_trapezoid(form1)"><br><br>
+         Площадь трапеции равна <input type="number" name="res" ><br><br>
+         <script src="4.1.js"></script>
+      </form>
+      <!--ЦИКЛЫ(4.2)-->
+      <form name="form2">
+         <h4>Все целые числа, кратные 31 в интервале от -800 до 800:</h4>
+         <input type="button"  value="Показать" id="myButton" onclick="Multiple_31(form2)"><br><br>
+         Результат : 
+         <div id="res" class="text"></div>
+         Количество чисел :
+         <div id= "res2" class = "text"></div>
+         <script src="4.2.js"></script>
+      </form>
+      <!-- МАТРИЦА(4.3)-->
+      <h4>Матрица 8 на 8</h4>
+      <button class="random">Сгенерировать массив</button> <br><br>
+      <button class="order">Упорядочить элементы в каждой строке в порядке возрастания их значений</button> <br><br>
+      <div id="table"></div>
+      <script src="4.3.js"></script>
+      <!-- ФУНКЦИИ(4.4)-->
+      <h4>Функции</h4>
+      Введите минимальное значение:<input type="number" size="40" value="" class="min"><br><br>
+      Введите максимальное значение:<input type="number" size="40" value="" class="max"><br><br>
+      Введите размер массива:<input type="number" size="40" value="" class="n"><br><br>
+      <button class="create">Сгенерировать массив</button><br><br>
+      <div id="massiv"></div>
+      <button class="sort">Отсортировать массив</button><br><br>
+      <div id="sortmassiv"></div>
+      <script src="4.4.js"></script>
+   </body>
+</html>
